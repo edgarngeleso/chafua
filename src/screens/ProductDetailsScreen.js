@@ -312,18 +312,14 @@ const ProductDetailsScreen = ({navigation,route})=>{
                                 width:0,
                                 height:10,
                     },
-                    shadowopacity:1,
-                    shadowradius:5,
+                    shadowOpacity:1,
+                    shadowRadius:5,
                     elevation:5,
                 }}
             >
                
                 <CartPopupComponent navigation={navigation}/>
             </View>:<></>}
-            
-            
-            
-            
 
         </ScrollView>
     )

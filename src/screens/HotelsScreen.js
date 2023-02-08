@@ -1,5 +1,5 @@
 import React from "react";
-import {Text,View,ScrollView} from "react-native";
+import {Text,View,ScrollView,SafeAreaView} from "react-native";
 import CustomBar from "../components/CustomBar";
 import HeaderComponent from "../components/HeaderComponent";
 import HotelsComponent from "../components/HotelsComponent";
@@ -7,7 +7,7 @@ import SearchComponent from "../components/SearchComponent";
 const HotelsScreen = ({navigation})=>{
 
     return (
-        <View>
+        <SafeAreaView>
             <HeaderComponent navigation={navigation}>
                     <Text style={{fontSize:25,
                                 fontWeight:"bold",
@@ -32,7 +32,7 @@ const HotelsScreen = ({navigation})=>{
                 <CustomBar name={"Hotels"}/>
                 <HotelsComponent navigation={navigation}/>
             </ScrollView>
-        </View>
+        </SafeAreaView>
     )
 }
 

@@ -308,7 +308,7 @@ const HeaderComponent = ({navigation,children})=>{
                         >
                             <TouchableOpacity
                                 onPress={()=>{
-                                    let phoneNumber_url = "tel://0742092433";
+                                    let phoneNumber_url = "tel://0112220962";
                                     openLink(phoneNumber_url);
                                   }}
                                   style={{justifyContent:"center",
@@ -334,7 +334,7 @@ const HeaderComponent = ({navigation,children})=>{
 
                             <TouchableOpacity
                                 onPress={()=>{
-                                    let sms_url = `sms:0742092433?body="Hello,thank you for contacting us.How can we help you?"`;
+                                    let sms_url = `sms:0112220962?body="Hello,thank you for contacting us.How can we help you?"`;
                                     openLink(sms_url);
                                   }}
 

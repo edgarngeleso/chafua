@@ -1,9 +1,9 @@
 import React from "react";
-import {Text,View} from "react-native";
+import {Text,View,SafeAreaView} from "react-native";
 import HeaderComponent from "../components/HeaderComponent";
 const NotificationsScreen = ({navigation})=>{
     return (
-        <View>
+        <SafeAreaView>
             <HeaderComponent navigation={navigation}>
                 <Text style={{fontSize:25,
                                 fontWeight:"bold",
@@ -25,7 +25,7 @@ const NotificationsScreen = ({navigation})=>{
                 >There are no notifications yet.</Text>
             </View>
 
-        </View>
+        </SafeAreaView>
     )
 }
 

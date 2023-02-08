@@ -4,6 +4,7 @@ import {Text,
         ScrollView,
         TouchableOpacity,
         Modal,
+        SafeAreaView,
         Image} from "react-native";
 import { useSelector } from "react-redux";
 import AddressesComponent from "../components/AddressesComponent";

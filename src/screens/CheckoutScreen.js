@@ -5,7 +5,8 @@ import {Text,
         TouchableOpacity,
         Modal,
         Image,
-        ActivityIndicator} from "react-native";
+        ActivityIndicator,
+        SafeAreaView} from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import {useSelector,useDispatch} from "react-redux";
 import LottieView from "lottie-react-native";
@@ -96,7 +97,7 @@ const CheckoutScreen = ({navigation})=>{
     }
 
     return (
-        <View>
+        <SafeAreaView>
             {loginInfo.loggedIn?
                 <View>
                     <HeaderComponent navigation={navigation}>
@@ -483,7 +484,7 @@ const CheckoutScreen = ({navigation})=>{
                 </View>:
                 <SigninSignupScreen navigation={navigation}/>
                 }
-        </View>
+        </SafeAreaView>
     )
 }
 

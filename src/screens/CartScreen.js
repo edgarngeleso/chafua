@@ -40,7 +40,13 @@ const CartScreen = ({navigation})=>{
         }
     }
     return (
-        <ScrollView>
+        <ScrollView
+            contentContainerStyle={{
+                width:"100%",
+                flexGrow:1,
+                marginBottom:50, 
+            }}
+        >
             <HeaderComponent navigation={navigation}>
                 <Text style={{fontSize:25,
                                 fontWeight:"bold",
@@ -52,11 +58,7 @@ const CartScreen = ({navigation})=>{
             <SearchComponent navigation={navigation}/>
             {allItems.items.length>0?
             <View
-                contentContainerStyle={{
-                    width:"100%",
-                    flexGrow:1,
-                    marginBottom:50, 
-                }}
+                
             >
             {
                 allItems.items.map((item,index)=>{
@@ -65,7 +67,16 @@ const CartScreen = ({navigation})=>{
                             style={{
                                 width:"98%",
                                 height:150,
-                                margin:10
+                                margin:10,
+                                shadowColor:"grey",
+                                shadowOffset:{
+                                    width:0,
+                                    height:10,
+                                    },
+                                shadowOpacity:0.5,
+                                shadowRadius:3,
+                                elevation:5,
+                                backgroundColor:"#ffffff"
                             }}
                             key={index}
                             onPress={()=>navigation.navigate("details",item)}
