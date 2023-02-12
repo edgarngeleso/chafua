@@ -43,7 +43,7 @@ const HotelProductsScreen = ({navigation,route})=>{
                 <Text style={{fontSize:25,
                                 fontWeight:"bold",
                                 marginLeft:2}}>
-                        {hotelName}
+                        {hotelName.length>20?`${hotelName.substring(0,20)}...`:hotelName}
                     </Text>
             </HeaderComponent>
             <SearchComponent navigation={navigation}/>

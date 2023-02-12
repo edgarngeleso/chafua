@@ -10,14 +10,7 @@ import AppSplashScreen from './src/components/AppSplashScreen';
 const store = configureStore();
 
 const App = () => {
-  const [splashScreenOpen,setSplashScreenOpen] = useState(false);
-  const a = ()=>{
-    /*return(
-      <NavigationContainer>
-        <Drawers/>
-    </NavigationContainer> 
-    )*/
-  }
+  const [splashScreenOpen,setSplashScreenOpen] = useState(true);
 
 useEffect(()=>{
   setSplashScreenOpen(true);

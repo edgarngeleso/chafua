@@ -40,7 +40,8 @@ const ProfileScreen = ({navigation})=>{
                 <HeaderComponent navigation={navigation}>
                     <Text style={{fontSize:25,
                                     fontWeight:"bold",
-                                    marginLeft:2}}>
+                                    marginLeft:2,
+                                    color:"#000000"}}>
                             Profile
                     </Text>
                 </HeaderComponent>

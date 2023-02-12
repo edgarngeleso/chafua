@@ -305,16 +305,18 @@ const ProductDetailsScreen = ({navigation,route})=>{
                     margin:2,
                     marginTop:10,
                     width:"98%",
-                    height:70,
+                    padding:10,
                     margin:"1%",
                     shadowColor:"grey",
                     shadowOffset:{
                                 width:0,
                                 height:10,
                     },
-                    shadowOpacity:1,
-                    shadowRadius:5,
+                    shadowOpacity:0.8,
+                    shadowRadius:3,
                     elevation:5,
+                    backgroundColor:"#ffffff",
+                    borderRadius:5,
                 }}
             >
                

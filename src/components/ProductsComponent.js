@@ -61,7 +61,7 @@ const ProductsComponent = ({navigation})=>{
                                     backgroundColor:"orange",
                                     marginTop:10,
                                     borderRadius:5,
-                                    height:28
+                                    height:40
                                 }}
                         >
                             <Text style={{fontSize:20,
