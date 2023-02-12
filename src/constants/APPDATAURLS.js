@@ -4,8 +4,8 @@
  * In this case will be http://10.0.2.2:85/api/api.php
  */
 
-let URL = "http://10.0.2.2:85";
-//let URL = "https://chafua-admin.co.ke";
+//let URL = "http://10.0.2.2:85";
+let URL = "https://chafua-admin.co.ke";
 let APIURL = `${URL}/api/api.php`;
 const APPDATAURLS = {
     mainURL:URL,
